@@ -46,7 +46,7 @@ export default function AddNewStudentPage() {
 
           <div className="overflow-hidden rounded-2xl border border-[#E8F0F7] bg-white shadow-sm">
             <Tabs value={activeTab} onValueChange={setActiveTab}>
-              <TabsList className="grid h-auto w-full grid-cols-3 justify-start rounded-none border-b border-[#E8F0F7] bg-transparent px-6 pt-5 pb-0">
+              <TabsList className="h-auto w-full justify-start gap-6 rounded-none border-b border-[#E8F0F7] bg-transparent px-6 pt-5 pb-0">
                 {[
                   { value: "basic", label: "Basic Information" },
                   { value: "parent", label: "Parent Details" },
@@ -56,9 +56,9 @@ export default function AddNewStudentPage() {
                     key={tab.value}
                     value={tab.value}
                     className={cn(
-                      "relative rounded-none border-b-0 bg-transparent px-0 pt-0 pb-4 text-center text-[13.5px] font-medium shadow-none after:absolute after:right-0 after:bottom-0 after:left-0 after:h-1 after:rounded-full after:content-['']",
-                      "data-active:bg-transparent data-active:text-[#2437E6] data-active:shadow-none data-active:after:bg-[#2F3DF8]",
-                      "data-inactive:text-[#6B88B8] data-inactive:after:bg-transparent"
+                      "rounded-none border-b-2 bg-transparent px-0 pt-0 pb-3 text-[13.5px] font-medium shadow-none",
+                      "data-active:border-blue-600 data-active:bg-transparent data-active:text-blue-600 data-active:shadow-none",
+                      "data-inactive:border-transparent data-inactive:text-gray-400"
                     )}
                   >
                     {tab.label}
