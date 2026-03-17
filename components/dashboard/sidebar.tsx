@@ -1,16 +1,16 @@
 import {
-  BarChart2,
-  Bell,
-  Building2,
-  CalendarDays,
-  CheckSquare,
-  ChevronDown,
-  ClipboardCheck,
-  GraduationCap,
-  LayoutDashboard,
-  LogOut,
-  Settings,
-  Users,
+    BarChart2,
+    Bell,
+    Building2,
+    CalendarDays,
+    CheckSquare,
+    ChevronDown,
+    ClipboardCheck,
+    GraduationCap,
+    LayoutDashboard,
+    LogOut,
+    Settings,
+    Users,
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -38,7 +38,7 @@ const bottomItems = [
 
 export function DashboardSidebar() {
   return (
-    <aside className="hidden min-h-screen w-58 shrink-0 flex-col border-r border-[#E8F0F7] bg-white lg:flex">
+    <aside className="hidden min-h-screen w-58 font-nunito-sans shrink-0 flex-col border-r border-[#E8F0F7] bg-white lg:flex">
       <div className="flex h-16 shrink-0 items-center gap-3 border-b border-[#E8F0F7] px-5">
         <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#1A3C6E]">
           <span className="text-[9px] leading-none font-bold text-white">
